@@ -62,3 +62,11 @@
 - **Static Modal**: Display a static modal instead of an alert on a successful donation.
 - **Reusable Functions**: Use at least 2 common functions.
 - **Responsive Design**: Ensure the application is responsive for different screen sizes.
+
+- **Input Validation**:
+- Validate the donation amount:
+
+  - If the donation amount is greater than the account balance.
+  - If the input field contains an invalid number.
+  - If the input field is empty.
+    <!-- main card gula eikhane -->

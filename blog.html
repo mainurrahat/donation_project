@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset=" UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+    <!-- css file link korchi -->
+    <!-- <link rel="stylesheet" href="sty.css"> -->
+    <!-- this is for tailwind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontowsome link for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!--font owsome for icon  -->
+    <script src="https://kit.fontawesome.com/b4d7b66561.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-slate-300 min-h-screen">
+    <main>
+        <h1 class="text-lg font-bold">ques1)-->What is the Document Object Model (DOM)?</h1>
+        <p class="text-base ">
+            ans:- The Document Object Model (DOM) is a way for web browsers to represent the content of a webpage so
+            that it
+            can
+            be
+            manipulated using programming languages like JavaScript. It organizes the HTML elements (like paragraphs,
+            images,
+            links,
+            <br>
+            etc.) into a tree-like structure that programmers can interact with.
+
+        </p>
+        <br><br><br><br>
+        <h1 class="text-lg font-bold">ques2)-->How do you select an element from the DOM?</h1>
+        <p class="text-base "></p>ans:-To select an element from the DOM (Document Object Model) in JavaScript, you can
+        use
+        a variety of built-in
+        methods.
+        These methods allow you to grab specific elements or groups of elements from your webpage so that you can
+        manipulate
+        them.
+        Common Ways to Select DOM Elements:
+        <h1 class="font-bold"><u><i>getElementById():</i></u></h1>
+
+        Selects a single element by its id attribute.
+        IDs are unique, so this returns just one element
+        <h1 class="font-bold"><u><i></i>getElementsByClassName():</i></u></h1>
+
+        Selects all elements that have a specific class.
+        Returns an HTMLCollection (a list of elements), so you might need to loop through it or access a specific item.
+        <h1 class="font-bold"><u><i></i>getElementsByTagName():</i></u></h1>
+
+        Selects all elements by their HTML tag (e.g., div, p, img).
+        Also returns an HTMLCollection.
+        <h1 class="font-bold"><u><i></i>querySelector():</i></u></h1>
+
+        Selects the first element that matches a CSS selector.
+        You can select by class, ID, tag, or even more complex CSS selectors.
+        <h1 class="font-bold"><u><i></i>querySelectorAll():</i></u></h1>
+
+        Selects all elements that match a CSS selector.
+        Returns a NodeList (similar to an array), so you can loop through it or access individual elements.</p>
+        <br><br><br><br>
+
+        <h1 class="text-lg font-bold">ques3)-->What is event delegation in the context of the DOM, and why is it useful?
+        </h1>
+        ans:-Event delegation is a technique in JavaScript where a single event listener is attached to a parent element
+        rather
+        than adding multiple event listeners to individual child elements. This is especially useful in the context of
+        the
+        DOM
+        when you have many similar child elements or dynamically created elements.
+        <br><br><br><br>
+
+        <h1 class="text-lg font-bold">ques4)-->How do you manipulate an element's attributes and styles using the DOM?
+        </h1>
+        In the DOM, you can easily manipulate an element’s attributes (such as id, src, href) and styles (like color,
+        font-size,
+        background) using JavaScript. This allows you to dynamically change the content, appearance, and behavior of
+        elements on
+        the page.
+
+        1. Manipulating Attributes
+        You can get, set, or remove HTML attributes on elements using JavaScript.
+
+        Common methods:
+        getAttribute(attribute): Retrieves the value of a specified attribute.
+        setAttribute(attribute, value): Sets or changes the value of a specified attribute.
+        removeAttribute(attribute): Removes a specified attribute from an element.
+
+    </main>
+    <div id="back_btn" class="text-center">
+        <button onclick="back()"
+            class="h-[56px] w-[380px] btn btn-primary bg-[#B4F461] border-none text-black rounded-xl mt-5 items-center ">back
+            to
+            website</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
