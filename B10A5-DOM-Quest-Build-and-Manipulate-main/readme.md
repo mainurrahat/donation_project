@@ -70,20 +70,154 @@
   - If the input field contains an invalid number.
   - If the input field is empty.
     <!-- main card gula eikhane -->
+    // console.log("js conneced");
+    document.getElementById("Blog-btn").addEventListener("click", function () {
+    window.open("blog.html", "\_blank");
+    });
+    function back() {
+    window.location.href = "index.html";
+    }
+    function playmain() {
+    const main_section = document.getElementById("main_id");
+    main_section.classList.remove("hidden");
+    const play_section = document.getElementById("histoty_id");
+    play_section.classList.add("hidden");
+    }
+    function playhistory() {
+    const play_section = document.getElementById("histoty_id");
+    const main_section = document.getElementById("main_id");
+    main_section.classList.add("hidden");
+    play_section.classList.remove("hidden");
+    }
 
-// document.addEventListener("click", function () {
-// const element = document.getElementById("blog_amar_blnce");
-// console.log(element);
-// element.innerText = "Content updated!";
-// });
-const blogg = document.getElementById("blog_amar_blnce");
-console.log(blogg);
-blogg.innerText = now_blnce;
-// const index = document.getElementById(index_amar_blnce);
-// index.innerText = now_blnce;
-// function blog() {
-// console.log("blog btn clicked");
-// // const blog = document.getElementById(blog_amar_blnce);
-// // console.log(blog);
-// // blog.innerText =now_blnce;
+function fun() {
+console.log("donate btn clicked");
+const input_man = document.getElementById("ammount").value; //jeita ami dichi
+const input_int_man = parseFloat(input_man); //jeita ami dichi
+const my = document.getElementById("my_balance"); //amar je taka ache
+const my_balance_taka = my.innerText; //amar jei taka ache
+const my_balance_int = parseFloat(my_balance_taka); //my main acc blnce
+const curnt_money = document.getElementById("individuals_moneyy"); //nokhali the kotho diche
+const curnt_money_now = curnt_money.innerText; //noakhli the main taka
+document.getElementById("ammount").value = ""; //clear the input
+if (
+input_int_man >= 0 &&
+typeof input_int_man === "number" &&
+input_int_man < my_balance_int
+) {
+curnt_money.innerText = input_int_man + parseFloat(curnt_money_now); //ami ja dichi+eder aga ja chilo
+const now_blnce = my_balance_int - input_int_man; //amar ache=age cha chilo-ekn ja dichi
+my_balance.innerText = now_blnce;
+const card = document.getElementById("cong1");
+card.classList.remove("hidden");
+} else {
+alert("plz,currectly input data");
+}
+}
+
+function closee() {
+const cards = document.getElementById("cong1");
+console.log("close e clicked");
+cards.classList.add("hidden");
+const cardss = document.getElementById("cong2");
+console.log("close e clicked");
+cardss.classList.add("hidden");
+const cardsss = document.getElementById("cong3");
+console.log("close e clicked");
+cardsss.classList.add("hidden");
+}
+// function closeee() {
+// const cards = document.getElementById("cong1");
+// console.log("close e clicked");
+// cards.classList.add("hidden");
+// const cardss = document.getElementById("cong2");
+// console.log("close e clicked");
+// cardss.classList.add("hidden");
+// const cardsss = document.getElementById("cong3");
+// console.log("close e clicked");
+// cardsss.classList.add("hidden");
 // }
+// function closeeee() {
+// const cards = document.getElementById("cong1");
+// console.log("close e clicked");
+// cards.classList.add("hidden");
+// const cardss = document.getElementById("cong2");
+// console.log("close e clicked");
+// cardss.classList.add("hidden");
+// const cardsss = document.getElementById("cong3");
+// console.log("close e clicked");
+// cardsss.classList.add("hidden");
+// }
+
+function func() {
+console.log("donate btn clicked");
+const input_man = document.getElementById("ammountt").value; //jeita ami dichi
+const input_int_man = parseFloat(input_man); //jeita ami dichi
+const my = document.getElementById("my_balance"); //amar je taka ache
+const my_balance_taka = my.innerText; //amar jei taka ache
+const my_balance_int = parseFloat(my_balance_taka); //my main acc blnce
+const curnt_money = document.getElementById("individuals_moneyyy"); //nokhali the kotho diche
+const curnt_money_now = curnt_money.innerText; //noakhli the main taka
+document.getElementById("ammountt").value = ""; //clear the input
+if (
+input_int_man >= 0 &&
+typeof input_int_man === "number" &&
+input_int_man < my_balance_int
+) {
+curnt_money.innerText = input_int_man + parseFloat(curnt_money_now); //ami ja dichi+eder aga ja chilo
+const now_blnce = my_balance_int - input_int_man; //amar ache=age cha chilo-ekn ja dichi
+my_balance.innerText = now_blnce;
+const card = document.getElementById("cong2");
+card.classList.remove("hidden");
+} else {
+alert("plz,currectly input data");
+}
+}
+
+function fact() {
+console.log("donate btn clicked");
+const input_man = document.getElementById("ammounttt").value; //jeita ami dichi
+const input_int_man = parseFloat(input_man); //jeita ami dichi
+const my = document.getElementById("my_balance"); //amar je taka ache
+const my_balance_taka = my.innerText; //amar jei taka ache
+const my_balance_int = parseFloat(my_balance_taka); //my main acc blnce
+const curnt_money = document.getElementById("individuals_moneyyyy"); //nokhali the kotho diche
+const curnt_money_now = curnt_money.innerText; //noakhli the main taka
+document.getElementById("ammounttt").value = ""; //clear the input
+if (
+input_int_man >= 0 &&
+typeof input_int_man === "number" &&
+input_int_man < my_balance_int
+) {
+curnt_money.innerText = input_int_man + parseFloat(curnt_money_now); //ami ja dichi+eder aga ja chilo
+const now_blnce = my_balance_int - input_int_man; //amar ache=age cha chilo-ekn ja dichi
+my_balance.innerText = now_blnce;
+const card = document.getElementById("cong3");
+card.classList.remove("hidden");
+} else {
+alert("plz,currectly input data");
+}
+}
+
+ <main id="histoty_id" class="py-9 bg-white container mx-auto mt-48 hidden">
+
+        <!-- history packet  -->
+        <section>
+            <!-- noakhali history start -->
+            <section
+                class="flex flex-col md:flex-row justify-center mt-12 border-4 w-[430px] h-[120px]   md:w-[1140px] md:h-[134px] mx-auto rounded-xl p-5">
+                <h1>96500 Taka is Donated for famine-2024 at noakhali, Bangladesh</h1>
+            </section>
+            <!-- feni history start -->
+            <section
+                class="flex flex-col md:flex-row justify-center mt-12 border-4 w-[430px] h-[120px] md:w-[1140px] md:h-[134px] mx-auto rounded-xl p-5">
+                <h1>6500 Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
+            </section>
+            <!-- quata history movement -->
+            <section
+                class="flex flex-col md:flex-row justify-center mt-12 border-4 w-[430px] h-[120px] md:w-[1140px] md:h-[134px] mx-auto rounded-xl p-5">
+                <h1>15500 Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h1>
+            </section>
+
+        </section>
+    </main>
