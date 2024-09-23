@@ -21,7 +21,7 @@
 <body class="bg-gray-100 min-h-screen relative">
     <!-- navver -->
     <section class="container mx-auto backdrop-blur-2xl fixed top-0">
-        <section class="flex justify-around p-8 bg-gray-200">
+        <section class="flex justify-around p-8 bg-gray-200 gap-4">
             <button id="Blog-btn" class="btn btn-primary bg-[#B4F461] text-black border-none w-28">Blog</button>
             <div class="flex w-56  items-center gap-4">
                 <img src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/logo.png" alt="">
@@ -36,10 +36,10 @@
         <!-- donation and history btn -->
         <main class="p-9 container mx-auto">
             <div class="flex justify-center gap-5">
-                <button id="Donation_btn" onclick="playmain()"
-                    class="btn btn-primary bg-[#B4F461] border-none text-black w-28 drop-shadow-2xl">Donation</button>
-                <button id="history_btn" onclick="playhistory()"
-                    class="btn btn-primary bg-white border-none text-black w-28 drop-shadow-2xl">History</button>
+                <button id="Donation_btn" onclick="playmain();checkButton()"
+                    class="btn btn-primary bg-[#B4F461] border-none text-black w-28 drop-shadow-2xl rounded-2xl">Donation</button>
+                <button id="history_btn" onclick="playhistory(); checkButton()"
+                    class="btn btn-primary bg-white border-none text-black w-28 drop-shadow-2xl rounded-2xl">History</button>
             </div>
             </div>
         </main>
@@ -157,7 +157,7 @@
 
 
     <!-- history -->
-    <main id="histoty_id" class="py-9 bg-white container mx-auto mt-48 hidden">
+    <main id="history_id" class="py-9 container mx-auto mt-48 hidden">
         <!-- history packet  -->
 
         <ul id="history" class="mt-4 space-y-2">

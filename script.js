@@ -1,4 +1,5 @@
 // console.log("js conneced");
+
 document.getElementById("Blog-btn").addEventListener("click", function () {
   window.open("blog.html", "_blank");
 });
@@ -8,11 +9,11 @@ function back() {
 function playmain() {
   const main_section = document.getElementById("main_id");
   main_section.classList.remove("hidden");
-  const play_section = document.getElementById("histoty_id");
+  const play_section = document.getElementById("history_id");
   play_section.classList.add("hidden");
 }
 function playhistory() {
-  const play_section = document.getElementById("histoty_id");
+  const play_section = document.getElementById("history_id");
   const main_section = document.getElementById("main_id");
   main_section.classList.add("hidden");
   play_section.classList.remove("hidden");
@@ -37,6 +38,7 @@ function fun() {
   document.getElementById("ammount").value = ""; //clear the input
   if (
     input_int_man >= 0 &&
+    !isNaN(input_man) &&
     typeof input_int_man === "number" &&
     input_int_man < my_balance_int
   ) {
@@ -112,6 +114,7 @@ function func() {
   document.getElementById("ammountt").value = ""; //clear the input
   if (
     input_int_man >= 0 &&
+    !isNaN(input_man) &&
     typeof input_int_man === "number" &&
     input_int_man < my_balance_int
   ) {
@@ -144,6 +147,7 @@ function func() {
 function fact() {
   console.log("donate btn clicked");
   const input_man = document.getElementById("ammounttt").value; //jeita ami dichi
+  // console.log(isNaN(input_man));
   const input_int_man = parseFloat(input_man); //jeita ami dichi
   const my = document.getElementById("my_balance"); //amar je taka ache
   const my_balance_taka = my.innerText; //amar jei taka ache
@@ -153,6 +157,7 @@ function fact() {
   document.getElementById("ammounttt").value = ""; //clear the input
   if (
     input_int_man >= 0 &&
+    !isNaN(input_man) &&
     typeof input_int_man === "number" &&
     input_int_man < my_balance_int
   ) {
@@ -181,3 +186,26 @@ function fact() {
     alert("plz,currectly input data");
   }
 }
+
+function checkButton() {
+  // console.log("chk btn cnctd");
+  const btn1 = document.getElementById("main_id");
+  const btn2 = document.getElementById("Donation_btn");
+  const btn3 = document.getElementById("history_id");
+  const btn4 = document.getElementById("history_btn");
+
+  if (!btn1.classList.contains("hidden")) {
+    btn2.classList.add("bg-slate-600");
+  }
+  if (btn1.classList.contains("hidden")) {
+    btn2.classList.remove("bg-slate-600");
+  }
+  if (!btn3.classList.contains("hidden")) {
+    btn4.classList.add("bg-slate-600");
+  }
+  if (btn3.classList.contains("hidden")) {
+    btn4.classList.remove("bg-slate-600");
+  }
+}
+
+checkButton();
