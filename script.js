@@ -8,6 +8,8 @@ function back() {
 function playmain() {
   const main_section = document.getElementById("main_id");
   main_section.classList.remove("hidden");
+  const play_section = document.getElementById("histoty_id");
+  play_section.classList.add("hidden");
 }
 function playhistory() {
   const play_section = document.getElementById("histoty_id");
@@ -34,7 +36,15 @@ function fun() {
     curnt_money.innerText = input_int_man + parseFloat(curnt_money_now); //ami ja dichi+eder aga ja chilo
     const now_blnce = my_balance_int - input_int_man; //amar ache=age cha chilo-ekn ja dichi
     my_balance.innerText = now_blnce;
+    const card = document.getElementById("cong1");
+    card.classList.remove("hidden");
   } else {
     alert("plz,currectly input data");
   }
+}
+
+function closee() {
+  const cards = document.getElementById("cong1");
+  console.log("close e clicked");
+  cards.classList.add("hidden");
 }
