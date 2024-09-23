@@ -70,3 +70,20 @@
   - If the input field contains an invalid number.
   - If the input field is empty.
     <!-- main card gula eikhane -->
+
+// document.addEventListener("click", function () {
+// const element = document.getElementById("blog_amar_blnce");
+// console.log(element);
+// element.innerText = "Content updated!";
+// });
+const blogg = document.getElementById("blog_amar_blnce");
+console.log(blogg);
+blogg.innerText = now_blnce;
+// const index = document.getElementById(index_amar_blnce);
+// index.innerText = now_blnce;
+// function blog() {
+// console.log("blog btn clicked");
+// // const blog = document.getElementById(blog_amar_blnce);
+// // console.log(blog);
+// // blog.innerText =now_blnce;
+// }

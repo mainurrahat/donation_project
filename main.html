@@ -16,38 +16,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!--font owsome for icon  -->
     <script src="https://kit.fontawesome.com/b4d7b66561.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="bg-gray-100 min-h-screen">
     <!-- navver -->
-    <section class="container mx-auto  backdrop-blur-2xl  fixed top-0">
+    <section class="container mx-auto backdrop-blur-2xl fixed top-0">
         <section class="flex justify-around p-8 bg-gray-200">
-            <button id="Blog-btn" class="btn btn-primary bg-[#B4F461] text-black border-none w-28">Blog</button>
-            <div class="flex w-56  items-center gap-4 ">
+            <button onclick="blog()" id="Blog-btn"
+                class="btn btn-primary bg-[#B4F461] text-black border-none w-28">Blog</button>
+            <div class="flex w-56 items-center gap-4">
                 <img src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/logo.png" alt="">
                 <h1 class="font-bold text-base">donate Bangladesh</h1>
             </div>
-            <div class="flex w-56  items-center gap-4 ">
+            <div class="flex w-56 items-center gap-4 ">
                 <img src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt="">
-                <h1>5500 BDT</h1>
+                <h1><span id="amar_blnce">5500</span>BDT</h1>
             </div>
 
         </section>
         <!-- donation and history btn -->
 
-        <main class="py-9  container mx-auto">
+        <main class="py-9 container mx-auto">
             <div class="flex justify-center gap-5">
                 <button id="Donation_btn"
                     class="btn btn-primary bg-[#B4F461] border-none text-black w-28 drop-shadow-2xl">Donation</button>
-                <button class="btn btn-primary bg-white border-none text-black w-28 drop-shadow-2xl">History</button>
+                <button id="history_btn"
+                    class="btn btn-primary bg-white border-none text-black w-28 drop-shadow-2xl">History</button>
             </div>
             </div>
         </main>
     </section>
-
-
-
-
 
 
     <main class="py-1 bg-white container mx-auto mt-44">
@@ -62,7 +61,7 @@
             <section class="pl-0 md:pl-12 pt-7">
                 <button class="h-10 w-28 flex items-center gap-2 bg-[#1111110D] rounded-xl"><img
                         src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt="">
-                    <p>0 BDT</p>
+                    <p><span id="individuals_moneyy">0</span> BDT</p>
                 </button>
                 <div>
                     <h1 class="text-xl font-extrabold">Donate for Flood at Noakhali, Bangladesh</h1>
@@ -75,10 +74,10 @@
                         impact on the lives of those in need.</p>
                 </div>
                 <div class="items-center pl-8 md:pl-1">
-                    <input class="h-[56px] w-[380px] md:w-[522px] border-2 rounded-xl pl-5 mt-5" type="text" name=""
-                        id="" placeholder="enter your ammount">
+                    <input id="ammount" class="h-[56px] w-[380px] md:w-[522px] border-2 rounded-xl pl-5 mt-5"
+                        type="text" name="" placeholder="enter your ammount">
                     <br>
-                    <button
+                    <button onclick="fun()" ,onclick='pop()' id="donating"
                         class="h-[56px] w-[380px] md:w-[522px] btn btn-primary bg-[#B4F461] border-none text-black rounded-xl mt-5">Donation</button>
 
                 </div>
@@ -94,7 +93,7 @@
             <section class="pl-0 md:pl-12 pt-7">
                 <button class="h-10 w-28 flex items-center gap-2 bg-[#1111110D] rounded-xl"><img
                         src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt="">
-                    <p>0 BDT</p>
+                    <p><span>0</span> BDT</p>
                 </button>
                 <div>
                     <h1 class="text-xl font-extrabold">Donate for Flood Relief in Feni,Bangladesh</h1>
@@ -112,7 +111,7 @@
                     <input class="h-[56px] w-[380px] md:w-[522px] border-2 rounded-xl pl-5 mt-5" type="text" name=""
                         id="" placeholder="enter your ammount">
                     <br>
-                    <button
+                    <button id="donating"
                         class="h-[56px] w-[380px] md:w-[522px] btn btn-primary bg-[#B4F461] border-none text-black rounded-xl mt-5">Donation</button>
 
                 </div>
@@ -130,7 +129,7 @@
             <section class="pl-0 md:pl-12 pt-7">
                 <button class="h-10 w-28 flex items-center gap-2 bg-[#1111110D] rounded-xl"><img
                         src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt="">
-                    <p>0 BDT</p>
+                    <p><span>0</span> BDT</p>
                 </button>
                 <div>
                     <h1 class="text-xl font-extrabold">Aid for Injured in the Quota Movement</h1>
@@ -149,7 +148,7 @@
                     <input class="h-[56px] w-[380px] md:w-[522px] border-2 rounded-xl pl-5 mt-5" type="text" name=""
                         id="" placeholder="enter your ammount">
                     <br>
-                    <button
+                    <button id="donating"
                         class="h-[56px] w-[380px] md:w-[522px] btn btn-primary bg-[#B4F461] border-none text-black rounded-xl mt-5">Donation</button>
 
                 </div>
@@ -161,10 +160,14 @@
 
 
     </main>
+
+
+
+
+
     <footer class="h-28 rounded-xl">
     </footer>
 
-    <script src="script.js"></script>
 
 </body>
 
