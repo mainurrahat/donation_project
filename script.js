@@ -64,7 +64,7 @@ function fun() {
     // Append the new history item to the history list
     document.getElementById("history").appendChild(historyItem);
   } else {
-    alert("plz,currectly input data");
+    alert("please,currectly input data");
   }
 }
 
@@ -140,7 +140,7 @@ function func() {
     // Append the new history item to the history list
     document.getElementById("history").appendChild(historyItem);
   } else {
-    alert("plz,currectly input data");
+    alert("please,currectly input data");
   }
 }
 
@@ -183,7 +183,7 @@ function fact() {
     // Append the new history item to the history list
     document.getElementById("history").appendChild(historyItem);
   } else {
-    alert("plz,currectly input data");
+    alert("please,currectly input data");
   }
 }
 
